@@ -1,0 +1,7 @@
+<h3>Enter your name :</h3>
+<input type="text" [(ngModel)]="display" (keyup)="check()" >
+<p *ngIf="bol">welcome {{display}}</p>
+<br>
+<br>
+<button class="btn btn-danger mt-3" (click)="reset()">Reset</button>
+<hr>
